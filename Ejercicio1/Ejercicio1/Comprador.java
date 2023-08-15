@@ -66,8 +66,18 @@ public class Comprador {
     } 
     public void setPmaximo(int PMaximo) { 
         this.PMaximo=PMaximo; 
+    }  
+    //variables que se van a mandar a otras clases.
+    public static int getcantidadl1 () { 
+        return cantidadl1; 
     } 
-    
+    public static int getcantidadl2() { 
+        return cantidadl2;
+    } 
+    public static int getcantidadl3() { 
+        return cantidadl3; 
+    } 
+
     public int AleatorioAsignado() { 
         return AleatorioAsignado.nextInt(15000-1+1)+1; 
     }   
@@ -94,25 +104,31 @@ public class Comprador {
                 //localidad precio mas alejado pero las mas barata. 
                 if (PMaximo < SistemaDeVentas.valorL1) { 
                     System.out.println("No tiene la suficiente capacidad economica para pagar la entrada...")
-                }else { 
+                }else if (SistemaDeVentas.BoletosL1() >0&& SistemaDeVentas.BoletosL1() <20){ 
                     cantidadl1 = PMaximo /SistemaDeVentas.valorL1;  
                     System.out.println("La cantidad de entrada que usted va a comprar con ese presupuesto en esta localidad es de "+cantidadl1); 
+                }else { 
+                    System.out.println("No tiene las validadciones necesarias para la compra..."); 
                 }
             }else if (localidad ==2) { 
                 //vista mejor al escenario con precio de 500 
                  if (PMaximo < SistemaDeVentas.valorL2) { 
                     System.out.println("No tiene la suficiente capacidad economica para pagar la entrada...")
-                }else { 
+                }else if (SistemaDeVentas.BoletosL2() >0&& SistemaDeVentas.BoletosL2() <20) { 
                     cantidadl2 = PMaximo /SistemaDeVentas.valorL2;  
                     System.out.println("La cantidad de entrada que usted va a comprar con ese presupuesto en esta localidad es de "+cantidadl2); 
+                }else { 
+                    System.out.println("No tiene las validadciones necesarias para la compra..."); 
                 }
             }else { 
                 //localidad hasta adelante 1000 
                  if (PMaximo < SistemaDeVentas.valorL3) { 
                     System.out.println("No tiene la suficiente capacidad economica para pagar la entrada...")
-                }else { 
+                }else if (SistemaDeVentas.BoletosL3() >0&& SistemaDeVentas.BoletosL3() <20){ 
                     cantidadl3 = PMaximo /SistemaDeVentas.valorL3;  
                     System.out.println("La cantidad de entrada que usted va a comprar con ese presupuesto en esta localidad es de "+cantidadl3); 
+                } else { 
+                    System.out.println("No tiene las validadciones necesarias para la compra..."); 
                 }
             }
         }else {  
