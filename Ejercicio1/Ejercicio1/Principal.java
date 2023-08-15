@@ -33,7 +33,8 @@ public class Principal {
         System.out.println(comprador);
         } else { 
             System.out.println("Gracias por ingresar al portal de compra de boletos de taylor swift...");
-        } 
+        }  
+        //mostrar los datos finales... 
         System.out.println("La cantidad total de boletos es... "+SistemaDeVentas.Boletos()); 
         System.out.println("La cantidad de boletos de la localidad 1 es... "+SistemaDeVentas.BoletosL1()); 
         System.out.println("La cantidad de boletos de la localidad 2 es... "+SistemaDeVentas.BoletosL2());  

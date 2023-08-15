@@ -3,11 +3,12 @@ import java.util.*;
 import java.util.Random; 
 
 public class Comprador {  
-    //declaracion variables generales 
+    //declaracion variables generales  
+   
     public static int cantidadl1;  
     public static int cantidadl2; 
     public static int cantidadl3; 
-    //declaracion de los atibutos de la clase Comprador.java 
+    //declaracion de los atibutos de la clase Comprador.java  
     private String nombre; 
     private String email; 
     private int Nboletos; 
@@ -21,7 +22,7 @@ public class Comprador {
     private int localidad; 
 
 
-    //constructores de la clase...
+    //constructores de la clase... '' 
     public Comprador() { 
         nombre =""; 
         email=""; 
@@ -30,6 +31,13 @@ public class Comprador {
         AleatorioAsignado = new Random();  
         Local =new Random(); 
     } 
+    /**
+     * 
+     * @param nombre
+     * @param email
+     * @param Nboletos
+     * @param PMaximo
+     */
 
     public Comprador(String nombre, String email, int Nboletos, int PMaximo) { 
         this.nombre=nombre; 
@@ -49,7 +57,11 @@ public class Comprador {
 
     public String getEmail(){ 
         return email; 
-    } 
+    }  
+    /**
+     * 
+     * @param email
+     */
     public void setEmail(String email){ 
         this.email = email; 
     } 
@@ -84,7 +96,7 @@ public class Comprador {
     public int Local() { 
         return Local.nextInt(3-1+1)+1; 
     }
-    //funcion para realizar la estadistica acerca de la localidad y asi...  
+    //funcion para realizar la estadistica acerca de la localidad y asi...   
     public void InfoCompra () {  
         if (Principal.sistema==1) { 
             valor = AleatorioAsignado(); //este es el numero aleatorio que es el ticket... 

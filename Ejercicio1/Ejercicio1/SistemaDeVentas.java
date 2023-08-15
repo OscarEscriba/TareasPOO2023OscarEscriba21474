@@ -1,5 +1,8 @@
 package Ejercicio1; 
-public class SistemaDeVentas {
+/**
+ * Aqui se utilizara 
+ */
+public class SistemaDeVentas { 
     public static int noentradas=60;  
     public static int valorL1=100; 
     public static int valorL2=500; 
