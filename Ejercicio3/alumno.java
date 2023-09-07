@@ -59,7 +59,9 @@ public class alumno {
     public void setCodigoUnico(int codigoUnico){ 
         this.codigoUnico=codigoUnico; 
     } 
-
+    /*
+     * Metodo toString para mostrar bien los datos de las cosas... 
+     */
     @Override 
     public String toString() { 
         return "nombre: " + getNombre() + ", apellido " + getApellido() + ", correo" + getCorreo() + ",cumpleanios " + getCumpleanios()+", codigo unico"+getCodigoUnico(); 

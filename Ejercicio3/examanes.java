@@ -36,7 +36,10 @@ public class examanes {
     } 
     public void setCu(int cu) { 
         this.cu=cu; 
-    } 
+    }  
+    /* 
+     * ToString para mostrar y escribir bien los datos. en las cosas... 
+     */
     @Override 
     public String toString() {
         return "nombreMateria: " + getNombrem() + ", nota: " + getNota() + ", codigoUnico: " + getCu(); 
