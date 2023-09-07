@@ -1,7 +1,5 @@
 package Ejercicio3;
 
-import java.util.ArrayList;
-
 public class alumno {     
     private String nombre; 
     private String apellido; 
@@ -10,7 +8,11 @@ public class alumno {
     private int codigoUnico; 
 
     public void alumno() { 
-        ArrayList<String> alumno = new ArrayList<String>(); 
+        nombre=""; 
+        apellido=""; 
+        correo=""; 
+        cumpleanios=0;  
+        codigoUnico=0;  
     } 
     public alumno(String nombre, String apellido, String correo, int cumpleanios, int codigoUnico) { 
         this.nombre=nombre; 
@@ -56,5 +58,10 @@ public class alumno {
     } 
     public void setCodigoUnico(int codigoUnico){ 
         this.codigoUnico=codigoUnico; 
+    } 
+
+    @Override 
+    public String toString() { 
+        return "nombre: " + getNombre() + ", apellido " + getApellido() + ", correo" + getCorreo() + ",cumpleanios " + getCumpleanios()+", codigo unico"+getCodigoUnico(); 
     }
 }
