@@ -1,6 +1,7 @@
 package Ejercicio3;
 
 public class examanes {  
+    //atributos de la clase examanes...
     private String nombrem; 
     private int nota; 
     private int cu; 
