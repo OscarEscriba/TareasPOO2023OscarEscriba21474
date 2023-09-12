@@ -76,7 +76,7 @@ public class curso {
         this.profesor=profesor; 
     } 
 
-    //metodos toString. 
+    //metodos toString
     @Override 
     public String toString() { 
         return "{}" + 
