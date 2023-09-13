@@ -8,7 +8,6 @@ public class horario {
         this.Maestro=Maestro; 
     } 
     public horario() { 
-        this.curso = new curso(); 
         this.Maestro= new profesor(); 
     }  
 

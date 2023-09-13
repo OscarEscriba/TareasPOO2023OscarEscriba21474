@@ -7,25 +7,17 @@ public class curso {
     private int dias; 
     private int horas; 
     private int alumnos; 
-    private String profesor; 
+    private profesor Profesor; 
 
-    public curso() { 
-        this.codigo=0; 
-        this.nombre=""; 
-        this.periodos=0; 
-        this.dias=0; 
-        this.horas=0;
-        this.alumnos=0; 
-        this.profesor=""; 
-    } 
-    public curso(int codigo, String nombre, int periodos, int dias, int horas, int alumnos, String profesor) { 
+
+    public curso(int codigo, String nombre, int periodos, int dias, int horas, int alumnos, profesor Profesor) { 
         this.codigo=codigo;  
         this.nombre=nombre; 
         this.periodos=periodos; 
         this.dias=dias; 
         this.horas=horas; 
         this.alumnos=alumnos; 
-        this.profesor=profesor; 
+        this.Profesor=Profesor; 
     } 
     public int getCodigo () { 
         return this.codigo; 
@@ -68,25 +60,24 @@ public class curso {
     public void setAlumnos(int alumnos) { 
         this.alumnos=alumnos; 
     } 
-
-    public String getProfesor() { 
-        return this.profesor; 
+    public profesor getProfesor() { 
+        return this.Profesor; 
     } 
-    public void setProfesor(String profesor) { 
-        this.profesor=profesor; 
+    public void setProfesor(profesor Profesor) { 
+        this.Profesor=Profesor; 
     } 
 
     //metodos toString
     @Override 
     public String toString() { 
-        return "{}" + 
+        return "{" + 
         " codigo'" + getCodigo() + "'" + 
         " nombre'" + getNombre() + "'" + 
-         " periodos'" + getCodigo() + "'" + 
-          " dias'" + getCodigo() + "'" + 
-           " horas'" + getCodigo() + "'" + 
-            " alumnos '" + getCodigo() + "'" + 
-             " profesor'" + getCodigo() + "'" + 
+         " periodos'" + getPeriodos() + "'" + 
+          " dias'" + getDias() + "'" + 
+           " horas'" + getHoras() + "'" + 
+            " alumnos '" + getAlumnos() + "'" + 
+             " profesor'" + getProfesor() + "'" + 
              "}"; 
     }
  }   
