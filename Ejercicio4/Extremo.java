@@ -40,5 +40,11 @@ public class Extremo extends Jugador {
             ", AsistenciasEfectivas='" + getAsistenciasEfectivas() + "'" +
             "}";
     }
+    //metodo calculo de la efectividad... 
 
+    public double Efectividad() {  
+        double Efectividad = ((Pases + AsistenciasEfectivas -Faltas)*100/(Pases + AsistenciasEfectivas + Faltas))+super.ParteFinalCalculo(); 
+        return Efectividad; 
+    } 
+    
 }

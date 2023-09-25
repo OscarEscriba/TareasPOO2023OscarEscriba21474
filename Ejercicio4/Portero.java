@@ -40,5 +40,9 @@ public class Portero extends Jugador{
             ", GolesRecibidos='" + getGolesRecibidos() + "'" +
             "}";
     }
-
+    //metodo calculo de la efectividad... 
+    public double Efectividad() { 
+        double Efectividad = ((ParadasEfectivas-GolesRecibidos)*100/(ParadasEfectivas+GolesRecibidos))+super.ParteFinalCalculo(); 
+        return Efectividad; 
+    }
 }

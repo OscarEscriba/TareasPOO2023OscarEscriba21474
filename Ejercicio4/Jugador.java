@@ -70,6 +70,17 @@ public class Jugador {
             ", GolesDirectos='" + getGolesDirectos() + "'" +
             ", TotalLanzamientos='" + getTotalLanzamientos() + "'" +
             "}";
-    }
+    } 
+    public double ParteFinalCalculo() {
+        double parte1 = GolesDirectos*100; 
+        double ParteFinal = parte1/TotalLanzamientos; 
+        return ParteFinal; 
+    }  
 
+    //la parte que va a mandar los datos ingresados en faltas... 
+   /**  public double Faltas() {  
+        double faltas = Faltas; 
+        return faltas; 
+    }
+    */  
 }
