@@ -76,5 +76,8 @@ public class Jugador {
             "}";
     }
 
-    //metodos generales de la clase jugador... 
+    //metodos generales de la clase jugador...  
+    public double CalcularEfectividad() { 
+        return 0; 
+    }
 }
