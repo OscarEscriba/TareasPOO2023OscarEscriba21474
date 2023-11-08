@@ -1,5 +1,7 @@
 package Laboratorio03HerenciaOscarEscriba;
 
+import java.util.List;
+
 public class Snacks extends Emprendiento {
     private String Gramos; 
     private String Sabor; 
@@ -11,7 +13,7 @@ public class Snacks extends Emprendiento {
         Sabor =""; 
         Tamanio=""; 
     } 
-    public Snacks(String Gramos, String Sabor, String Tamanio, int idProducto, String nombre, int cantidadVendida, int CantidadDisponible, String Estado, double Precio, String Categoria) { 
+    public Snacks(String Gramos, String Sabor, String Tamanio, String idProducto, String nombre, String cantidadVendida, String CantidadDisponible, String Estado, String Precio, String Categoria) { 
         super(idProducto, nombre, cantidadVendida, CantidadDisponible, Estado, Precio, Categoria); 
         this.Gramos=Gramos; 
         this.Sabor=Sabor; 
@@ -49,5 +51,19 @@ public class Snacks extends Emprendiento {
             ", Tamanio='" + getTamanio() + "'" +
             "}";
     }
-
+    
+    //metodo para mostrar los snacks... 
+    public void mostrarSnacks(List <Emprendiento> emprendimiento) {   
+        int contadorSnacks =0; 
+        System.out.println("Los snacks disponibles son los siguientes..."); 
+        for (Emprendiento emprendientos: emprendimiento) { 
+            if (emprendientos instanceof Snacks) {   
+                contadorSnacks++; 
+                Snacks snacks = (Snacks)emprendientos; 
+                System.out.println("Nombre "+snacks.getNombre()+"Tamanio "+snacks.getTamanio()+ "Gramos "+snacks.getGramos()
+                +"Sabor "+snacks.getSabor()); 
+            } 
+        }   
+        System.out.println("LA CANTIDAD DE SNACKS ES LA SIGUIENTE..."+contadorSnacks);
+    }
 }

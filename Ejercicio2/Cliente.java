@@ -7,7 +7,7 @@ public class Cliente{
     private String Nombre; 
     private int Noches; 
     private int TipoCliente; 
-
+//s
     public Cliente() { 
     } 
     public Cliente(String Nombre, int Noches, int TipoCliente) { 

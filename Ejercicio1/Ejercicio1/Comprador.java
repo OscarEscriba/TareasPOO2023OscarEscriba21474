@@ -1,7 +1,7 @@
 package Ejercicio1;  
 import java.util.*;  
 import java.util.Random; 
-
+//s
 public class Comprador {  
     //declaracion variables generales  
    

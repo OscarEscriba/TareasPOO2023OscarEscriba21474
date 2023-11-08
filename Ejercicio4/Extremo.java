@@ -4,7 +4,7 @@ public class Extremo extends Jugador {
     private int Pases; 
     private int AsistenciasEfectivas;  
 
-    //metodos... 
+    //metodos... s
     public Extremo(){ 
         super(); 
         Pases=0; 

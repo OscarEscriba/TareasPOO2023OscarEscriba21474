@@ -1,20 +1,27 @@
 package Laboratorio03HerenciaOscarEscriba;
 
 public class Emprendiento {
-    private int idProducto; 
+    private String idProducto; 
     private String nombre; 
-    private int CantidadDisponible; 
-    private int cantidadVendida; 
+    private String CantidadDisponible; 
+    private String cantidadVendida; 
     private String Estado; 
-    private double Precio; 
+    private String Precio; 
     private String Categoria; 
 
     //constructoresSt 
 
-    public Emprendiento() { 
+    public Emprendiento() {  
+        idProducto=""; 
+        nombre=""; 
+        CantidadDisponible=""; 
+        cantidadVendida=""; 
+        Estado=""; 
+        Precio=""; 
+        Categoria=""; 
     } 
 
-    public Emprendiento(int idProducto, String nombre, int cantidadVendida, int CantidadDisponible, String Estado, double Precio, String Categoria) { 
+    public Emprendiento(String idProducto, String nombre, String cantidadVendida, String CantidadDisponible, String Estado, String Precio, String Categoria) { 
         this.idProducto=idProducto; 
         this.nombre=nombre; 
         this.CantidadDisponible=CantidadDisponible; 
@@ -24,11 +31,11 @@ public class Emprendiento {
         this.Categoria=Categoria; 
     } 
     //metodos get y set... 
-    public int getIdProducto() {
+    public String getIdProducto() {
         return this.idProducto;
     }
 
-    public void setIdProducto(int idProducto) {
+    public void setIdProducto(String idProducto) {
         this.idProducto = idProducto;
     }
 
@@ -40,19 +47,19 @@ public class Emprendiento {
         this.nombre = nombre;
     }
 
-    public int getCantidadDisponible() {
+    public String getCantidadDisponible() {
         return this.CantidadDisponible;
     }
 
-    public void setCantidadDisponible(int CantidadDisponible) {
+    public void setCantidadDisponible(String CantidadDisponible) {
         this.CantidadDisponible = CantidadDisponible;
     }
 
-    public int getCantidadVendida() {
+    public String getCantidadVendida() {
         return this.cantidadVendida;
     }
 
-    public void setCantidadVendida(int cantidadVendida) {
+    public void setCantidadVendida(String cantidadVendida) {
         this.cantidadVendida = cantidadVendida;
     }
 
@@ -64,11 +71,11 @@ public class Emprendiento {
         this.Estado = Estado;
     }
 
-    public double getPrecio() {
+    public String getPrecio() {
         return this.Precio;
     }
 
-    public void setPrecio(double Precio) {
+    public void setPrecio(String Precio) {
         this.Precio = Precio;
     }
 

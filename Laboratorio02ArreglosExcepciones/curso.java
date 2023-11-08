@@ -79,6 +79,7 @@ public class curso {
             " alumnos '" + getAlumnos() + "'" + 
              " profesor'" + getProfesor() + "'" + 
              "}"; 
-    }
+    } 
+    //
  }   
 

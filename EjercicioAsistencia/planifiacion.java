@@ -5,5 +5,5 @@ public class planifiacion {
 
     public planifiacion() { 
         horario = new servicio[6][9]; // se inicializa la matriz... 
-    }
+    } //a
 }

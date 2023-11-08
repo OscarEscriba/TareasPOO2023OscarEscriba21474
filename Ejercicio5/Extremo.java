@@ -29,7 +29,7 @@ public class Extremo extends Jugador {
     public void setAtaques(int Ataques) {
         this.Ataques = Ataques;
     }
-
+//s
     public int getBefectivos() {
         return this.Befectivos;
     }

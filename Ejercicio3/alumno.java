@@ -1,7 +1,7 @@
 package Ejercicio3;
 
 public class alumno {     
-    //atributos de la clase alumuno
+    //atributos de la clase alumunos
     private String nombre; 
     private String apellido; 
     private String correo;  
