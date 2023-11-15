@@ -153,7 +153,9 @@ public class Reserva implements IKayak {
             this.NumeroAsiento = teclado.nextLine(); 
             System.out.println("Ingrese la cantidad de maletas que lleva");
             this.cantidadMaletas = teclado.nextLine();  
-            teclado.close(); 
+            teclado.close();  
+            imprimirItinerario(); 
+            itinerario(); 
         }
     
         //metodos de la interfaz... 
