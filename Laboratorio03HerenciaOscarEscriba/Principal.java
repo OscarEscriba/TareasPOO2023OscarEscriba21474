@@ -33,7 +33,8 @@ public class Principal {
         juguetes.mostrarJuguetes(emprendimiento);   
 
         //se manda a llamar el metodo de ventas... 
-        Ventas(); 
+        Ventas();  
+        teclado.close(); 
     }  
 
     //metodo para buscar producto por medio de un id... 
